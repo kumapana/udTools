@@ -14,12 +14,9 @@
 	</select>
 	<form method="post" enctype="multipart/form-data" id="uploader">
 		<div class="info">
-			StudentID: <input type="text" id="studentID" name="studentID" value="C0117xxx"><br>
-			Password: <input type="text" id="password" name="password" value="8rphggwgw" autocomplete="on"><br>
+			StudentID: <input type="text" id="studentID" name="studentID" value=""><br>
+			Password: <input type="text" id="password" name="password" value="" autocomplete="on"><br>
 		</div>
-		<!-- div class="dnd" style="width:500px;height:100px;background:#eee;border:solid 1px #ccc;border-radius:15px;padding:20px;">
-			Drop some files here...
-		</div -->
 		<div class="uploader">
 			ファイル1 : <input type="file" name="uploadfile1"><br>
 			ファイル2 : <input type="file" name="uploadfile2"><br>
@@ -80,7 +77,7 @@
 
 			// Controlling Form
 			var upForm = document.getElementById('uploader');
-			upForm.action = "http://fire.cs.priv.teu.ac.jp/~aidasor/prokiso2/2017/acx/" + fName;
+			upForm.action = "http://fire.cs.priv.teu.ac.jp/~fushimity/h29/second/bp2/tue/" + fName;
 			upForm.submit();
 		}
 

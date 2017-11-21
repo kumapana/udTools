@@ -6,10 +6,10 @@
 </head>
 <body>
 	<h2>Get Attend</h2>
-	<form method="post" action="http://fire.cs.priv.teu.ac.jp/~aidasor/prokiso2/2017/acx/attend4th.cgi" enctype="multipart/form-data" id="sendReq">
+	<form method="post" action="" enctype="multipart/form-data" id="sendReq">
 		<div>
 		出席を提出します...<br>
-			StudentID: <input type="text" id="studentID" name="studentID" value="C0117XXX">
+			StudentID: <input type="text" id="studentID" name="studentID" value="C0117aaabb">
 			<br>
 			Password: <input type="text" id="password" name="password" value="XXXXXX">
 			<br>
@@ -28,7 +28,8 @@
 				pass.setAttribute("value", params['pass']);
 
 				var mainForm = document.getElementById("sendReq");
-				mainForm.setAttribute("action", "http://fire.cs.priv.teu.ac.jp/~aidasor/prokiso2/2017/acx/attend"+params['class']+"th.cgi")
+				mainForm.setAttribute("action", "http://fire.cs.priv.teu.ac.jp/~fushimity/h29/second/bp2/tue/attend5th.cgi")
+				/*mainForm.setAttribute("action", "http://fire.cs.priv.teu.ac.jp/~fushimity/h29/second/bp2/tue/attend"+params['class']+"th.cgi")*/
 				mainForm.submit();
 			}
 		}, 1000);
